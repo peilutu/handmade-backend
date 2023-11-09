@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qa1dyz%8nehm#_7@pm@z#ch(yaj9*c5y0$-xvf4s(6*hh7t9f$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['handmade-backend-72kn.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1','handmade-backend-72kn.onrender.com']
 
 
 # Application definition
@@ -121,8 +121,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-# STATIC_URL = 'static/'
+STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
+
+MEDIA_ROOT = BASE_DIR /'static/images'
+MEDIA_URL = '/images/'
 
 #On Django 4.2+:
 STORAGES = {
